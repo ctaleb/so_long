@@ -1,0 +1,16 @@
+00: Something went wrong
+01: Invalid launch argument count
+02: Memory allocation error
+03: Invalid launch argument
+04: Invalid file argument
+
+
+
+
+09: Invalid map
+10: Invalid map (not closed)
+11: Invalid map (not a rectangle)
+12: Invalid map (duplicate start points)
+13: Invalid map (no start point)
+14: Invalid map (no goal)
+15: Invalid map (nothing to collect)
