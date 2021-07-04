@@ -6,7 +6,7 @@
 /*   By: ctaleb <ctaleb@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 09:37:53 by ctaleb            #+#    #+#             */
-/*   Updated: 2021/07/03 14:15:53 by ctaleb           ###   ########lyon.fr   */
+/*   Updated: 2021/07/04 14:15:32 by ctaleb           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,7 @@ typedef struct s_mlx_params {
 	char		**file;
 	int			finished;
 	t_map		*map;
+	t_player	*pl;
 	t_image		*img;
 	t_texture	*ground;
 	t_texture	*wall;

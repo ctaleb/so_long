@@ -6,7 +6,7 @@
 #    By: ctaleb <ctaleb@student.42lyon.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/07 09:37:55 by ctaleb            #+#    #+#              #
-#    Updated: 2021/07/03 14:19:38 by ctaleb           ###   ########lyon.fr    #
+#    Updated: 2021/07/04 14:20:04 by ctaleb           ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,8 @@ SRC = so_long.c \
 		frame_gen.c \
 		map_init.c \
 		map.c \
-		movement.c
+		movement.c \
+		movement_utils.c
 
 SRCS = $(addprefix $(SRC_DIR), $(SRC))
 OBJS = $(SRCS:.c=.o)
