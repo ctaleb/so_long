@@ -11,7 +11,7 @@ void	check_start(t_mlx_params *mlx)
 		j = 0;
 		while (mlx->file[j])
 		{
-			if (mlx->file[i][j] = 'P')
+			if (mlx->file[i][j] == 'P')
 			{
 				if (mlx->map->start_x < 0 && mlx->map->start_y < 0)
 				{
@@ -20,6 +20,7 @@ void	check_start(t_mlx_params *mlx)
 				}
 				else
 					error_handler(12, NULL, -9);
+				mlx->file[i][j] = '0';
 			}
 			j++;
 		}

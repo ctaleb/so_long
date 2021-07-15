@@ -6,7 +6,7 @@
 /*   By: ctaleb <ctaleb@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 09:37:53 by ctaleb            #+#    #+#             */
-/*   Updated: 2021/07/04 14:15:32 by ctaleb           ###   ########lyon.fr   */
+/*   Updated: 2021/07/15 16:01:54 by ctaleb           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,11 +56,19 @@ typedef struct s_texture {
 	int		endian;
 }	t_texture;
 
+typedef struct s_patrol {
+	int		x;
+	int		y;
+	int		type;
+	int		mode;
+}	t_patrol;
+
 typedef struct s_mlx_params {
 	void		*ptr;
 	void		*win;
 	char		**file;
 	int			finished;
+	t_patrol	**patrol;
 	t_map		*map;
 	t_player	*pl;
 	t_image		*img;
