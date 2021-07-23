@@ -6,7 +6,7 @@
 /*   By: ctaleb <ctaleb@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 09:37:53 by ctaleb            #+#    #+#             */
-/*   Updated: 2021/07/15 16:01:54 by ctaleb           ###   ########lyon.fr   */
+/*   Updated: 2021/07/19 14:14:11 by ctaleb           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,5 +98,15 @@ int				frame_gen(t_mlx_params *mlx);
 
 	//map
 void			map_data_init(t_mlx_params *mlx, char *path);
+
+	//movement
+void			movement(t_mlx_params *mlx);
+int				check_f_coords(t_mlx_params *mlx);
+int				check_b_coords(t_mlx_params *mlx);
+int				check_l_coords(t_mlx_params *mlx);
+int				check_r_coords(t_mlx_params *mlx);
+
+	//printing
+void			put_map(int x, int y, t_mlx_params *mlx);
 
 #endif
