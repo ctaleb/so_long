@@ -6,7 +6,7 @@
 /*   By: ctaleb <ctaleb@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 09:37:53 by ctaleb            #+#    #+#             */
-/*   Updated: 2021/07/19 14:14:11 by ctaleb           ###   ########lyon.fr   */
+/*   Updated: 2021/07/30 11:32:37 by ctaleb           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,8 @@ typedef struct s_mlx_params {
 	void		*win;
 	char		**file;
 	int			finished;
+	int			res_x;//needs to be defined
+	int			res_y;//idem
 	t_patrol	**patrol;
 	t_map		*map;
 	t_player	*pl;
@@ -107,6 +109,8 @@ int				check_l_coords(t_mlx_params *mlx);
 int				check_r_coords(t_mlx_params *mlx);
 
 	//printing
+int				rgbtoi(int t, int r, int g, int b);
+void			my_mlx_pixel_put(t_mlx_params *mlx, int x, int y, int color);
 void			put_map(int x, int y, t_mlx_params *mlx);
 
 #endif
